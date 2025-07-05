@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYMPOSIUM 2025 - Symbol Blockchain Event</title>
+    <meta name="description" content="Symbol ブロックチェーンの最新情報とコミュニティが集まるイベント XYMPOSIUM 2025。2025年9月19日開催。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'symbol-blue': '#1E40AF',
+                        'symbol-cyan': '#06B6D4',
+                        'symbol-purple': '#8B5CF6',
+                        'symbol-dark': '#0F172A',
+                    },
+                    fontFamily: {
+                        'futura': ['Futura', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1E40AF 0%, #06B6D4 50%, #8B5CF6 100%);
+        }
+        
+        .card-glow {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .animate-pulse-slow {
+            animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-white">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 gradient-bg"></div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-symbol-blue rounded-full opacity-20 animate-float"></div>
+        <div class="absolute top-40 right-20 w-16 h-16 bg-symbol-cyan rounded-full opacity-30 animate-float" style="animation-delay: 2s;"></div>
+        <div class="absolute bottom-20 left-20 w-24 h-24 bg-symbol-purple rounded-full opacity-25 animate-float" style="animation-delay: 4s;"></div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <!-- Logo/Symbol -->
+                <div class="mb-8">
+                    <div class="w-32 h-32 mx-auto bg-gradient-to-br from-symbol-blue to-symbol-cyan rounded-full flex items-center justify-center mb-6 animate-pulse-slow">
+                        <div class="text-4xl font-bold text-white">XYM</div>
+                    </div>
+                </div>
+                
+                <!-- Main Title -->
+                <h1 class="text-6xl md:text-8xl font-bold mb-6 hero-gradient bg-clip-text text-transparent">
+                    XYMPOSIUM
+                </h1>
+                <div class="text-4xl md:text-6xl font-light mb-8 text-gray-300">
+                    2025
+                </div>
+                
+                <!-- Subtitle -->
+                <p class="text-xl md:text-2xl mb-12 text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    Symbol ブロックチェーンの未来を形作る<br>
+                    テクノロジーとコミュニティの祭典
+                </p>
+                
+                <!-- Event Info -->
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-slate-700">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4 text-symbol-cyan">開催日</h3>
+                            <p class="text-3xl font-bold mb-2">2025年9月19日</p>
+                            <p class="text-lg text-gray-400">金曜日</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4 text-symbol-cyan">会場</h3>
+                            <p class="text-lg mb-2">
+                                <strong>昼の部</strong><br>
+                                TOKYO CULTURE CULTURE (渋谷)<br>
+                                <span class="text-gray-400">12:00 - 17:00</span>
+                            </p>
+                            <p class="text-lg">
+                                <strong>夜の部</strong><br>
+                                Crypto Lounge GOX<br>
+                                <span class="text-gray-400">19:00 - 21:00</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="mb-8">
+                    <a href="#register" class="inline-block bg-gradient-to-r from-symbol-blue to-symbol-cyan hover:from-symbol-cyan hover:to-symbol-purple text-white font-semibold py-4 px-12 rounded-full text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        参加申し込み
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Symbol Section -->
+    <section class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-symbol-cyan">Symbol ブロックチェーン</h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        次世代のブロックチェーン技術で、実用的でシンプル、そして未来的なソリューションを提供
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-700 hover:border-symbol-blue transition-all duration-300 card-glow">
+                        <div class="w-16 h-16 bg-symbol-blue rounded-full flex items-center justify-center mb-6">
+                            <div class="text-2xl">⚡</div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">高速処理</h3>
+                        <p class="text-gray-400">
+                            革新的なアーキテクチャにより、高速で効率的なトランザクション処理を実現
+                        </p>
+                    </div>
+                    
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-700 hover:border-symbol-cyan transition-all duration-300 card-glow">
+                        <div class="w-16 h-16 bg-symbol-cyan rounded-full flex items-center justify-center mb-6">
+                            <div class="text-2xl">🔒</div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">セキュリティ</h3>
+                        <p class="text-gray-400">
+                            多層的なセキュリティ機能で、デジタル資産と取引を安全に保護
+                        </p>
+                    </div>
+                    
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-700 hover:border-symbol-purple transition-all duration-300 card-glow">
+                        <div class="w-16 h-16 bg-symbol-purple rounded-full flex items-center justify-center mb-6">
+                            <div class="text-2xl">🌐</div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">実用性</h3>
+                        <p class="text-gray-400">
+                            実世界のビジネス課題を解決する実用的なブロックチェーンソリューション
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Schedule -->
+    <section class="py-20 bg-slate-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-symbol-cyan">イベントスケジュール</h2>
+                    <p class="text-xl text-gray-300">
+                        一日を通してSymbolエコシステムの最新情報をお届け
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- 昼の部 -->
+                    <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700">
+                        <h3 class="text-3xl font-bold mb-6 text-symbol-blue">昼の部</h3>
+                        <div class="mb-6">
+                            <p class="text-lg text-gray-300 mb-2">
+                                <strong>会場:</strong> TOKYO CULTURE CULTURE (渋谷)
+                            </p>
+                            <p class="text-lg text-gray-300">
+                                <strong>時間:</strong> 12:00 - 17:00
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-blue rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">第1部: TSSからのアナウンス</p>
+                                    <p class="text-sm text-gray-400">40分（QA10分）</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-cyan rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">第2部: Symbol関連企業による発表</p>
+                                    <p class="text-sm text-gray-400">企業パートナーからの最新情報</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-purple rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">第3部: コミュニティ内部のディスカッション</p>
+                                    <p class="text-sm text-gray-400">開発者・ユーザーによる議論</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-blue rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">第4部: 外部メンバーとのディスカッション</p>
+                                    <p class="text-sm text-gray-400">業界エキスパートとの対話</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 夜の部 -->
+                    <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700">
+                        <h3 class="text-3xl font-bold mb-6 text-symbol-cyan">夜の部</h3>
+                        <div class="mb-6">
+                            <p class="text-lg text-gray-300 mb-2">
+                                <strong>会場:</strong> Crypto Lounge GOX
+                            </p>
+                            <p class="text-lg text-gray-300">
+                                <strong>時間:</strong> 19:00 - 21:00
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-cyan rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">ピッチセッション</p>
+                                    <p class="text-sm text-gray-400">革新的なプロジェクトの発表</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-purple rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">NEMTUSハッカソンのアナウンス</p>
+                                    <p class="text-sm text-gray-400">次回イベントの詳細発表</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-blue rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">物販・ネットワーキング</p>
+                                    <p class="text-sm text-gray-400">グッズ販売と交流の時間</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-symbol-cyan">参加申し込み</h2>
+                <p class="text-xl text-gray-300 mb-12">
+                    Symbolブロックチェーンの未来を一緒に創造しましょう
+                </p>
+                
+                <div class="bg-slate-900 rounded-2xl p-8 border border-slate-700 mb-12">
+                    <h3 class="text-2xl font-semibold mb-6">申し込み方法</h3>
+                    <p class="text-lg text-gray-300 mb-8">
+                        下記のGoogle フォームから参加申し込みをお願いします。<br>
+                        参加費は無料です。
+                    </p>
+                    
+                    <!-- Google Form Button (placeholder) -->
+                    <div class="mb-8">
+                        <a href="#" class="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-4 px-12 rounded-full text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            Google フォームで申し込む
+                        </a>
+                    </div>
+                    
+                    <div class="text-sm text-gray-400">
+                        <p>※ 申し込み締切: 2025年9月15日</p>
+                        <p>※ 定員に達し次第、受付を終了いたします</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700">
+                        <h4 class="text-xl font-semibold mb-4 text-symbol-blue">昼の部</h4>
+                        <p class="text-gray-300 mb-4">技術的な発表とディスカッション</p>
+                        <p class="text-sm text-gray-400">定員: 150名</p>
+                    </div>
+                    
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700">
+                        <h4 class="text-xl font-semibold mb-4 text-symbol-cyan">夜の部</h4>
+                        <p class="text-gray-300 mb-4">カジュアルなネットワーキング</p>
+                        <p class="text-sm text-gray-400">定員: 100名</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-900 border-t border-slate-700">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-gradient-to-br from-symbol-blue to-symbol-cyan rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div class="text-xl font-bold text-white">XYM</div>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-symbol-cyan">XYMPOSIUM 2025</h3>
+                <p class="text-gray-400 mb-6">
+                    Symbolブロックチェーンの未来を共に創造する
+                </p>
+                <div class="text-sm text-gray-500">
+                    <p>&copy; 2025 XYMPOSIUM. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add scroll reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(50px)';
+            section.style.transition = 'all 0.8s ease-out';
+            observer.observe(section);
+        });
+        
+        // Initialize first section
+        document.querySelector('section').style.opacity = '1';
+        document.querySelector('section').style.transform = 'translateY(0)';
+    </script>
+</body>
+</html>
