@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYMPOSIUM 2025 - Symbol Blockchain Event</title>
+    <meta name="description" content="Symbol ブロックチェーンの最新情報とコミュニティが集まるイベント XYMPOSIUM 2025。2025年9月19日開催。">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ymuichiro.github.io/xymposium-lps/2025/">
+    <meta property="og:title" content="XYMPOSIUM 2025 - Symbol Blockchain Event">
+    <meta property="og:description" content="Symbol ブロックチェーンの最新情報とコミュニティが集まるイベント XYMPOSIUM 2025。2025年9月19日開催。">
+    <meta property="og:image" content="https://ymuichiro.github.io/xymposium-lps/assets/twitter_card.png">
+    <meta property="og:site_name" content="XYMPOSIUM 2025">
+    <meta property="og:locale" content="ja_JP">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ymuichiro.github.io/xymposium-lps/2025/">
+    <meta property="twitter:title" content="XYMPOSIUM 2025 - Symbol Blockchain Event">
+    <meta property="twitter:description" content="Symbol ブロックチェーンの最新情報とコミュニティが集まるイベント XYMPOSIUM 2025。2025年9月19日開催。">
+    <meta property="twitter:image" content="https://ymuichiro.github.io/xymposium-lps/assets/twitter_card.png">
+    
+    <!-- Additional SEO -->
+    <meta name="keywords" content="Symbol, ブロックチェーン, イベント, XYMPOSIUM, 2025, 暗号通貨, コミュニティ">
+    <meta name="author" content="Symbol/NEM OSS Community">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ymuichiro.github.io/xymposium-lps/2025/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'symbol-blue': '#1E40AF',
+                        'symbol-cyan': '#06B6D4',
+                        'symbol-purple': '#8B5CF6',
+                        'symbol-dark': '#0F172A',
+                    },
+                    fontFamily: {
+                        'futura': ['Futura', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1E40AF 0%, #06B6D4 50%, #8B5CF6 100%);
+        }
+        
+        .card-glow {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .animate-pulse-slow {
+            animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        /* Navigation styles */
+        .nav-backdrop {
+            backdrop-filter: blur(10px);
+            background: rgba(15, 23, 42, 0.9);
+        }
+        
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #06B6D4;
+            transform: translateY(-2px);
+        }
+        
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-white">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-backdrop border-b border-slate-700">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="../assets/logo.webp" alt="Symbol Logo" class="h-10 w-auto">
+                    <span class="ml-3 text-xl font-bold text-symbol-cyan">XYMPOSIUM 2025</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-300 hover:text-symbol-cyan font-medium">ホーム</a>
+                    <a href="#about" class="nav-link text-gray-300 hover:text-symbol-cyan font-medium">Symbol について</a>
+                    <a href="#schedule" class="nav-link text-gray-300 hover:text-symbol-cyan font-medium">スケジュール</a>
+                    <a href="#access" class="nav-link text-gray-300 hover:text-symbol-cyan font-medium">アクセス</a>
+                    <a href="#register" class="nav-link text-gray-300 hover:text-symbol-cyan font-medium">参加申し込み</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-symbol-cyan focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden mobile-menu fixed top-16 left-0 right-0 bg-slate-900 border-b border-slate-700">
+            <div class="px-4 py-4 space-y-4">
+                <a href="#home" class="block text-gray-300 hover:text-symbol-cyan font-medium py-2">ホーム</a>
+                <a href="#about" class="block text-gray-300 hover:text-symbol-cyan font-medium py-2">Symbol について</a>
+                <a href="#schedule" class="block text-gray-300 hover:text-symbol-cyan font-medium py-2">スケジュール</a>
+                <a href="#access" class="block text-gray-300 hover:text-symbol-cyan font-medium py-2">アクセス</a>
+                <a href="#register" class="block text-gray-300 hover:text-symbol-cyan font-medium py-2">参加申し込み</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 gradient-bg"></div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-symbol-blue rounded-full opacity-20 animate-float"></div>
+        <div class="absolute top-40 right-20 w-16 h-16 bg-symbol-cyan rounded-full opacity-30 animate-float" style="animation-delay: 2s;"></div>
+        <div class="absolute bottom-20 left-20 w-24 h-24 bg-symbol-purple rounded-full opacity-25 animate-float" style="animation-delay: 4s;"></div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <!-- Logo/Symbol -->
+                <div class="mb-8">
+                    <div class="w-32 h-32 mx-auto bg-slate-800/50 backdrop-blur-sm rounded-full flex items-center justify-center mb-6 animate-pulse-slow border border-slate-700">
+                        <img src="../assets/logo.webp" alt="Symbol Logo" class="h-20 w-auto">
+                    </div>
+                </div>
+                
+                <!-- Main Title -->
+                <h1 class="text-6xl md:text-8xl font-bold mb-6 hero-gradient bg-clip-text text-transparent">
+                    XYMPOSIUM
+                </h1>
+                <div class="text-4xl md:text-6xl font-light mb-8 text-gray-300">
+                    2025
+                </div>
+                
+                <!-- Subtitle -->
+                <p class="text-xl md:text-2xl mb-12 text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    Symbol ブロックチェーンの未来を形作る<br>
+                    テクノロジーとコミュニティの祭典
+                </p>
+                
+                <!-- Event Info -->
+                <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-slate-700">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4 text-symbol-cyan">開催日</h3>
+                            <p class="text-3xl font-bold mb-2">2025年9月19日</p>
+                            <p class="text-lg text-gray-400">金曜日</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4 text-symbol-cyan">会場</h3>
+                            <p class="text-lg mb-2">
+                                <strong>昼の部</strong><br>
+                                TOKYO CULTURE CULTURE (渋谷)<br>
+                                <span class="text-gray-400">12:00 - 17:00</span>
+                            </p>
+                            <p class="text-lg">
+                                <strong>夜の部</strong><br>
+                                Crypto Lounge GOX<br>
+                                <span class="text-gray-400">19:00 - 21:00</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="mb-8">
+                    <a href="#register" class="inline-block bg-gradient-to-r from-symbol-blue to-symbol-cyan hover:from-symbol-cyan hover:to-symbol-purple text-white font-semibold py-4 px-12 rounded-full text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        参加申し込み
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Symbol Section -->
+    <section id="about" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-symbol-cyan">Symbol ブロックチェーン</h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        次世代のブロックチェーン技術で、実用的でシンプル、そして未来的なソリューションを提供
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-700 hover:border-symbol-blue transition-all duration-300 card-glow">
+                        <div class="w-16 h-16 bg-symbol-blue rounded-full flex items-center justify-center mb-6">
+                            <div class="text-2xl">⚡</div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">高速処理</h3>
+                        <p class="text-gray-400">
+                            革新的なアーキテクチャにより、高速で効率的なトランザクション処理を実現
+                        </p>
+                    </div>
+                    
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-700 hover:border-symbol-cyan transition-all duration-300 card-glow">
+                        <div class="w-16 h-16 bg-symbol-cyan rounded-full flex items-center justify-center mb-6">
+                            <div class="text-2xl">🔒</div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">セキュリティ</h3>
+                        <p class="text-gray-400">
+                            多層的なセキュリティ機能で、デジタル資産と取引を安全に保護
+                        </p>
+                    </div>
+                    
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-700 hover:border-symbol-purple transition-all duration-300 card-glow">
+                        <div class="w-16 h-16 bg-symbol-purple rounded-full flex items-center justify-center mb-6">
+                            <div class="text-2xl">🌐</div>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">実用性</h3>
+                        <p class="text-gray-400">
+                            実世界のビジネス課題を解決する実用的なブロックチェーンソリューション
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Schedule -->
+    <section id="schedule" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-symbol-cyan">イベントスケジュール</h2>
+                    <p class="text-xl text-gray-300">
+                        一日を通してSymbolエコシステムの最新情報をお届け
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- 昼の部 -->
+                    <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700">
+                        <h3 class="text-3xl font-bold mb-6 text-symbol-blue">昼の部</h3>
+                        <div class="mb-6">
+                            <p class="text-lg text-gray-300 mb-2">
+                                <strong>会場:</strong> TOKYO CULTURE CULTURE (渋谷)
+                            </p>
+                            <p class="text-lg text-gray-300">
+                                <strong>時間:</strong> 12:00 - 17:00
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-blue rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">第1部: TSSからのアナウンス</p>
+                                    <p class="text-sm text-gray-400">40分（QA10分）</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-cyan rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">第2部: Symbol関連企業による発表</p>
+                                    <p class="text-sm text-gray-400">企業パートナーからの最新情報</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-purple rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">第3部: コミュニティ内部のディスカッション</p>
+                                    <p class="text-sm text-gray-400">開発者・ユーザーによる議論</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-blue rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">第4部: 外部メンバーとのディスカッション</p>
+                                    <p class="text-sm text-gray-400">業界エキスパートとの対話</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 夜の部 -->
+                    <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700">
+                        <h3 class="text-3xl font-bold mb-6 text-symbol-cyan">夜の部</h3>
+                        <div class="mb-6">
+                            <p class="text-lg text-gray-300 mb-2">
+                                <strong>会場:</strong> Crypto Lounge GOX
+                            </p>
+                            <p class="text-lg text-gray-300">
+                                <strong>時間:</strong> 19:00 - 21:00
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-cyan rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">ピッチセッション</p>
+                                    <p class="text-sm text-gray-400">革新的なプロジェクトの発表</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-purple rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">NEMTUSハッカソンのアナウンス</p>
+                                    <p class="text-sm text-gray-400">次回イベントの詳細発表</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-slate-900 rounded-lg">
+                                <div class="w-3 h-3 bg-symbol-blue rounded-full mr-4"></div>
+                                <div>
+                                    <p class="font-semibold">物販・ネットワーキング</p>
+                                    <p class="text-sm text-gray-400">グッズ販売と交流の時間</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Access Section -->
+    <section id="access" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-symbol-cyan">会場へのアクセス</h2>
+                    <p class="text-xl text-gray-300">
+                        イベント会場への詳細なアクセス情報
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- TOKYO CULTURE CULTURE -->
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-700">
+                        <h3 class="text-3xl font-bold mb-6 text-symbol-blue">昼の部会場</h3>
+                        <div class="mb-6">
+                            <h4 class="text-xl font-semibold mb-3 text-symbol-cyan">TOKYO CULTURE CULTURE</h4>
+                            <p class="text-lg text-gray-300 mb-2">
+                                <strong>住所:</strong> 〒150-0043 東京都渋谷区道玄坂2-10-7 新大宗ビル1号館 B1F
+                            </p>
+                            <p class="text-lg text-gray-300 mb-4">
+                                <strong>最寄り駅:</strong> JR渋谷駅 ハチ公口より徒歩5分
+                            </p>
+                            <div class="bg-slate-800 rounded-lg p-4 mb-4">
+                                <p class="text-sm text-gray-300 mb-2"><strong>アクセス方法:</strong></p>
+                                <ul class="text-sm text-gray-400 space-y-1">
+                                    <li>• JR渋谷駅ハチ公口を出て、道玄坂方面へ向かいます</li>
+                                    <li>• 道玄坂を上り、約5分歩くと右手に新大宗ビル1号館が見えます</li>
+                                    <li>• 地下1階がTOKYO CULTURE CULTUREです</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Google Maps iframe -->
+                        <div class="mb-6">
+                            <div class="relative w-full h-64 bg-slate-800 rounded-lg overflow-hidden">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7234567890123!2d139.6973!3d35.6590!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab87!2sTOKYO%20CULTURE%20CULTURE!5e0!3m2!1sja!2sjp!4v1640000000000!5m2!1sja!2sjp"
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    class="rounded-lg">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Crypto Lounge GOX -->
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-700">
+                        <h3 class="text-3xl font-bold mb-6 text-symbol-cyan">夜の部会場</h3>
+                        <div class="mb-6">
+                            <h4 class="text-xl font-semibold mb-3 text-symbol-cyan">Crypto Lounge GOX</h4>
+                            <p class="text-lg text-gray-300 mb-2">
+                                <strong>住所:</strong> 〒150-0043 東京都渋谷区道玄坂2-6-2 藤山恒産第1ビル6F
+                            </p>
+                            <p class="text-lg text-gray-300 mb-4">
+                                <strong>最寄り駅:</strong> JR渋谷駅 ハチ公口より徒歩3分
+                            </p>
+                            <div class="bg-slate-800 rounded-lg p-4 mb-4">
+                                <p class="text-sm text-gray-300 mb-2"><strong>アクセス方法:</strong></p>
+                                <ul class="text-sm text-gray-400 space-y-1">
+                                    <li>• JR渋谷駅ハチ公口を出て、道玄坂方面へ向かいます</li>
+                                    <li>• 道玄坂を上り、約3分歩くと左手に藤山恒産第1ビルが見えます</li>
+                                    <li>• 6階がCrypto Lounge GOXです</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Google Maps iframe -->
+                        <div class="mb-6">
+                            <div class="relative w-full h-64 bg-slate-800 rounded-lg overflow-hidden">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7234567890123!2d139.6973!3d35.6590!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab87!2sCrypto%20Lounge%20GOX!5e0!3m2!1sja!2sjp!4v1640000000000!5m2!1sja!2sjp"
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    class="rounded-lg">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-700">
+                        <h4 class="text-xl font-semibold mb-4 text-symbol-cyan">交通案内</h4>
+                        <p class="text-gray-300 mb-4">
+                            両会場とも渋谷駅から徒歩圏内にあります。昼の部と夜の部の移動も徒歩約5分程度です。
+                        </p>
+                        <div class="grid md:grid-cols-3 gap-4 text-sm">
+                            <div class="bg-slate-800 rounded-lg p-3">
+                                <p class="text-symbol-blue font-medium">JR線</p>
+                                <p class="text-gray-400">山手線・埼京線・湘南新宿ライン</p>
+                            </div>
+                            <div class="bg-slate-800 rounded-lg p-3">
+                                <p class="text-symbol-cyan font-medium">私鉄</p>
+                                <p class="text-gray-400">東急線・京王線・小田急線</p>
+                            </div>
+                            <div class="bg-slate-800 rounded-lg p-3">
+                                <p class="text-symbol-purple font-medium">地下鉄</p>
+                                <p class="text-gray-400">銀座線・半蔵門線・副都心線</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-symbol-cyan">参加申し込み</h2>
+                <p class="text-xl text-gray-300 mb-12">
+                    Symbolブロックチェーンの未来を一緒に創造しましょう
+                </p>
+                
+                <div class="bg-slate-900 rounded-2xl p-8 border border-slate-700 mb-12">
+                    <h3 class="text-2xl font-semibold mb-6">申し込み方法</h3>
+                    <p class="text-lg text-gray-300 mb-8">
+                        下記のGoogle フォームから参加申し込みをお願いします。<br>
+                        参加費は無料です。
+                    </p>
+                    
+                    <!-- Google Form Button (placeholder) -->
+                    <div class="mb-8">
+                        <a href="https://forms.gle/V1AwUNWk8XuRtzZbA" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-4 px-12 rounded-full text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            Google フォームで申し込む
+                        </a>
+                    </div>
+                    
+                    <div class="text-sm text-gray-400">
+                        <p>※ 申し込み締切: 2025年9月15日</p>
+                        <p>※ 定員に達し次第、受付を終了いたします</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700">
+                        <h4 class="text-xl font-semibold mb-4 text-symbol-blue">昼の部</h4>
+                        <p class="text-gray-300 mb-4">技術的な発表とディスカッション</p>
+                        <p class="text-sm text-gray-400">定員: 150名</p>
+                    </div>
+                    
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700">
+                        <h4 class="text-xl font-semibold mb-4 text-symbol-cyan">夜の部</h4>
+                        <p class="text-gray-300 mb-4">カジュアルなネットワーキング</p>
+                        <p class="text-sm text-gray-400">定員: 100名</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-900 border-t border-slate-700">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-slate-800/50 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6 border border-slate-700">
+                    <img src="../assets/logo.webp" alt="Symbol Logo" class="h-10 w-auto">
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-symbol-cyan">XYMPOSIUM 2025</h3>
+                <p class="text-gray-400 mb-6">
+                    Symbolブロックチェーンの未来を共に創造する
+                </p>
+                <div class="mb-4">
+                    <a href="../terms/participation.html" class="text-symbol-cyan hover:text-symbol-blue transition-colors mr-4">参加規約</a>
+                    <a href="../terms/privacy.html" class="text-symbol-cyan hover:text-symbol-blue transition-colors">プライバシーポリシー</a>
+                </div>
+                <div class="text-sm text-gray-500">
+                    <p>&copy; 2025 XYMPOSIUM. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add scroll reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(50px)';
+            section.style.transition = 'all 0.8s ease-out';
+            observer.observe(section);
+        });
+        
+        // Initialize first section
+        document.querySelector('section').style.opacity = '1';
+        document.querySelector('section').style.transform = 'translateY(0)';
+    </script>
+</body>
+</html>
